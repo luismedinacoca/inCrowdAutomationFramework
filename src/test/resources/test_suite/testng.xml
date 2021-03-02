@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Demo Suite" thread-count="10" parallel="classes">
+    <parameter name="browser" value="chrome"></parameter>
+    <test thread-count="5" name="***** Testing in Chrome">
+        <classes>
+            <class name="runners.TestRunner"/>
+        </classes>
+    </test>
+
+    <parameter name="browser" value="microsoft_edge"></parameter>
+    <test thread-count="5" name="##### Testing in Edge">
+        <classes>
+            <class name="runners.TestRunner"/>
+        </classes>
+    </test>
+</suite> <!-- Suite -->
